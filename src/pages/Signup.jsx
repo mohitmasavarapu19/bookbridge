@@ -56,7 +56,7 @@ export default function Signup() {
           <div className="inline-flex p-3 bg-cyan-500/10 rounded-2xl text-cyan-400 mb-4">
             <FaUserPlus className="text-3xl animate-pulse" />
           </div>
-          <h1 className="text-4xl font-extrabold bg-linear-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
             Create Account
           </h1>
           <p className="text-gray-400 text-sm mt-2">Join BookBridge book marketplace</p>
@@ -128,7 +128,7 @@ export default function Signup() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-linear-to-r from-cyan-400 to-blue-500 text-slate-950 py-3.5 rounded-xl font-bold transition hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:scale-[1.01] active:scale-[0.99] flex justify-center items-center gap-2 cursor-pointer disabled:opacity-50"
+            className="w-full bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 py-3.5 rounded-xl font-bold transition hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:scale-[1.01] active:scale-[0.99] flex justify-center items-center gap-2 cursor-pointer disabled:opacity-50"
           >
             {loading ? (
               <span className="h-5 w-5 animate-spin rounded-full border-2 border-slate-950 border-t-transparent"></span>

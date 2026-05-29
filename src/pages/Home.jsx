@@ -31,7 +31,7 @@ export default function Home() {
             className="text-5xl md:text-7xl font-black tracking-tight leading-tight"
           >
             Welcome to{" "}
-            <span className="bg-linear-to-r from-cyan-400 via-blue-400 to-indigo-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500 bg-clip-text text-transparent">
               BookBridge
             </span>
           </motion.h1>
@@ -53,7 +53,7 @@ export default function Home() {
           >
             <Link
               to="/books"
-              className="w-full sm:w-auto bg-linear-to-r from-cyan-400 to-blue-500 text-slate-950 px-8 py-4 rounded-2xl font-bold text-sm md:text-base flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(34,211,238,0.35)] hover:shadow-[0_0_25px_rgba(34,211,238,0.5)] transition hover:scale-105 active:scale-95"
+              className="w-full sm:w-auto bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 px-8 py-4 rounded-2xl font-bold text-sm md:text-base flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(34,211,238,0.35)] hover:shadow-[0_0_25px_rgba(34,211,238,0.5)] transition hover:scale-105 active:scale-95"
             >
               <span>Explore Marketplace</span>
               <FaArrowRight className="text-xs" />

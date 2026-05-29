@@ -188,7 +188,7 @@ export default function Books() {
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
             Academic Book Marketplace
           </h1>
           <p className="text-gray-400 mt-3 text-sm md:text-base">
@@ -272,7 +272,7 @@ export default function Books() {
                 <button
                   onClick={handleSeedDatabase}
                   disabled={seeding}
-                  className="bg-linear-to-r from-cyan-400 to-blue-500 text-slate-950 px-6 py-3 rounded-xl font-bold text-xs md:text-sm transition hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] active:scale-95 disabled:opacity-60 cursor-pointer flex items-center gap-2 mx-auto"
+                  className="bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 px-6 py-3 rounded-xl font-bold text-xs md:text-sm transition hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] active:scale-95 disabled:opacity-60 cursor-pointer flex items-center gap-2 mx-auto"
                 >
                   {seeding ? (
                     <>
@@ -365,7 +365,7 @@ export default function Books() {
                         
                         <button
                           onClick={() => setSelectedBook(book)}
-                          className="bg-cyan-500/10 text-cyan-400 hover:bg-cyan-500 text-xs md:text-sm font-bold px-4 py-2 rounded-xl group-hover:text-slate-950 group-hover:bg-linear-to-r group-hover:from-cyan-400 group-hover:to-blue-500 transition-all duration-300 cursor-pointer"
+                          className="bg-cyan-500/10 text-cyan-400 hover:bg-cyan-500 text-xs md:text-sm font-bold px-4 py-2 rounded-xl group-hover:text-slate-950 group-hover:bg-gradient-to-r group-hover:from-cyan-400 group-hover:to-blue-500 transition-all duration-300 cursor-pointer"
                         >
                           View Details
                         </button>
@@ -420,7 +420,7 @@ export default function Books() {
                     e.target.src = "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&q=80&w=600";
                   }}
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-slate-900 via-transparent to-transparent md:bg-linear-to-r md:from-transparent md:to-slate-900/50"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:to-slate-900/50"></div>
                 
                 {/* Float badges on cover inside modal */}
                 <div className="absolute bottom-4 left-4 flex flex-wrap gap-2">
@@ -483,7 +483,7 @@ export default function Books() {
                 <div className="mt-8 pt-4 border-t border-slate-850 flex flex-col sm:flex-row gap-3">
                   <a
                     href={`tel:${selectedBook.contactPhone}`}
-                    className="flex-1 bg-linear-to-r from-cyan-400 to-blue-500 text-slate-950 py-3 rounded-xl font-bold text-xs md:text-sm hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all flex items-center justify-center gap-2 cursor-pointer text-center"
+                    className="flex-1 bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 py-3 rounded-xl font-bold text-xs md:text-sm hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all flex items-center justify-center gap-2 cursor-pointer text-center"
                   >
                     <FaPhoneAlt />
                     <span>Call Seller (+91 {selectedBook.contactPhone})</span>

@@ -82,13 +82,13 @@ export default function SellBook() {
       <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-blue-500/5 blur-[120px] pointer-events-none"></div>
 
       <div className="max-w-3xl mx-auto bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-6 md:p-10 rounded-3xl relative z-10 shadow-2xl">
-        <div className="absolute -top-px left-12 right-12 h-px bg-linear-to-r from-transparent via-cyan-500/40 to-transparent"></div>
+        <div className="absolute -top-px left-12 right-12 h-px bg-gradient-to-r from-transparent via-cyan-500/40 to-transparent"></div>
 
         <div className="text-center mb-10">
           <div className="inline-flex p-3 bg-cyan-500/10 rounded-2xl text-cyan-400 mb-4">
             <FaUpload className="text-3xl animate-bounce" />
           </div>
-          <h1 className="text-4xl font-extrabold bg-linear-to-r from-white to-slate-400 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-extrabold bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
             Sell Your Book
           </h1>
           <p className="text-gray-400 text-sm mt-2">List your academic books for other students to buy</p>
@@ -332,7 +332,7 @@ export default function SellBook() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-linear-to-r from-cyan-400 to-blue-500 text-slate-950 py-4 rounded-xl font-extrabold text-base transition hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:scale-[1.01] active:scale-[0.99] flex justify-center items-center gap-2 cursor-pointer disabled:opacity-50"
+            className="w-full bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 py-4 rounded-xl font-extrabold text-base transition hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:scale-[1.01] active:scale-[0.99] flex justify-center items-center gap-2 cursor-pointer disabled:opacity-50"
           >
             {loading ? (
               <span className="h-5 w-5 animate-spin rounded-full border-2 border-slate-950 border-t-transparent"></span>

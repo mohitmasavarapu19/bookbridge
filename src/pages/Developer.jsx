@@ -68,10 +68,14 @@ export default function Developer() {
           transition={{ duration: 0.6 }}
           className="bg-slate-900/50 backdrop-blur-xl border border-slate-800 p-8 md:p-12 rounded-3xl mb-12 shadow-2xl relative"
         >
-        <div className="absolute -top-px left-10 right-10 h-px bg-linear-to-r from-transparent via-cyan-500/50 to-transparent"></div>
+          <div className="absolute -top-px left-10 right-10 h-px bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent"></div>
+          
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
             <div>
-              <h1 className="text-4xl md:text-5xl font-extrabold mt-4 bg-linear-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-transparent">
+              <span className="text-cyan-400 text-xs font-bold uppercase tracking-widest bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/20">
+                Lead Creator & Developer
+              </span>
+              <h1 className="text-4xl md:text-5xl font-extrabold mt-4 bg-gradient-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-transparent">
                 MASAVARAPU SRI SIVA SAI MOHIT
               </h1>
               <p className="text-xl text-cyan-300 font-medium mt-2">
@@ -124,7 +128,7 @@ export default function Developer() {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
-                className={`group bg-linear-to-br ${skill.color} backdrop-blur-md border border-slate-800/80 p-6 rounded-2xl hover:bg-slate-900/60 transition-all duration-300`}
+                className={`group bg-gradient-to-br ${skill.color} backdrop-blur-md border border-slate-800/80 p-6 rounded-2xl hover:bg-slate-900/60 transition-all duration-300`}
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2.5 bg-slate-950 rounded-xl border border-slate-800 group-hover:border-slate-700 transition">
@@ -160,9 +164,9 @@ export default function Developer() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="bg-linear-to-r from-slate-900/70 via-slate-900/50 to-slate-900/10 backdrop-blur-xl border border-slate-800 rounded-3xl overflow-hidden p-8 md:p-12 relative shadow-2xl"
+            className="bg-gradient-to-r from-slate-900/70 via-slate-900/50 to-slate-900/10 backdrop-blur-xl border border-slate-800 rounded-3xl overflow-hidden p-8 md:p-12 relative shadow-2xl"
           >
-            <div className="absolute -top-px left-12 right-12 h-px bg-linear-to-r from-transparent via-purple-500/40 to-transparent"></div>
+            <div className="absolute -top-px left-12 right-12 h-px bg-gradient-to-r from-transparent via-purple-500/40 to-transparent"></div>
             <div className="absolute top-4 right-4 text-purple-400 bg-purple-500/10 px-3.5 py-1.5 rounded-full border border-purple-500/20 text-xs font-bold uppercase tracking-wide flex items-center gap-1.5">
               <FaBookOpen className="text-xs" />
               <span>Current Platform</span>

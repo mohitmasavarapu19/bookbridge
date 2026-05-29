@@ -27,10 +27,10 @@ export default function Navbar() {
       className="sticky top-0 z-50 flex justify-between items-center px-4 md:px-12 py-4 border-b border-slate-800/80 bg-slate-950/70 backdrop-blur-md text-white"
     >
       <Link to="/" className="flex items-center gap-2 group">
-        <div className="bg-linear-to-tr from-cyan-400 to-blue-500 p-2 rounded-xl text-slate-950 font-bold transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(34,211,238,0.5)]">
+        <div className="bg-gradient-to-tr from-cyan-400 to-blue-500 p-2 rounded-xl text-slate-950 font-bold transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(34,211,238,0.5)]">
           <FaBook className="text-lg" />
         </div>
-        <span className="text-xl md:text-2xl font-bold bg-linear-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent group-hover:from-cyan-300 group-hover:to-blue-300 transition-all duration-300">
+        <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent group-hover:from-cyan-300 group-hover:to-blue-300 transition-all duration-300">
           BookBridge
         </span>
       </Link>
@@ -103,7 +103,7 @@ export default function Navbar() {
             </Link>
             <Link
               to="/signup"
-              className="flex items-center gap-1 md:gap-1.5 px-2.5 md:px-3.5 py-1.5 md:py-2 rounded-xl text-xs md:text-sm font-bold bg-linear-to-r from-cyan-400 to-blue-500 text-slate-950 transition-all duration-200 hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] hover:scale-105"
+              className="flex items-center gap-1 md:gap-1.5 px-2.5 md:px-3.5 py-1.5 md:py-2 rounded-xl text-xs md:text-sm font-bold bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 transition-all duration-200 hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] hover:scale-105"
             >
               <FaUserPlus className="text-xs" />
               <span>Sign Up</span>
