@@ -17,7 +17,7 @@ const SEED_BOOKS = [
     sellerId: "seed-user-1",
     sellerName: "Siva Mohit",
     sellerEmail: "mohitmasavarapu1916@gmail.com",
-    createdAt: new Date(Date.now() - 3600000 * 24 * 3).toISOString() // 3 days ago
+    createdAt: new Date(Date.now() - 3600000 * 24 * 3).toISOString()
   },
   {
     title: "Computer Networking: A Top-Down Approach",
@@ -31,7 +31,7 @@ const SEED_BOOKS = [
     sellerId: "seed-user-2",
     sellerName: "Rahul Sharma",
     sellerEmail: "rahul.sharma@college.edu",
-    createdAt: new Date(Date.now() - 3600000 * 24 * 1).toISOString() // 1 day ago
+    createdAt: new Date(Date.now() - 3600000 * 24 * 1).toISOString()
   },
   {
     title: "Database System Concepts (7th Edition)",
@@ -45,7 +45,7 @@ const SEED_BOOKS = [
     sellerId: "seed-user-3",
     sellerName: "Priyanka Sen",
     sellerEmail: "priya.sen@college.edu",
-    createdAt: new Date(Date.now() - 3600000 * 12).toISOString() // 12 hours ago
+    createdAt: new Date(Date.now() - 3600000 * 12).toISOString()
   },
   {
     title: "Artificial Intelligence: A Modern Approach",
@@ -59,7 +59,7 @@ const SEED_BOOKS = [
     sellerId: "seed-user-4",
     sellerName: "Siva Mohit",
     sellerEmail: "mohitmasavarapu1916@gmail.com",
-    createdAt: new Date(Date.now() - 3600000 * 4).toISOString() // 4 hours ago
+    createdAt: new Date(Date.now() - 3600000 * 4).toISOString()
   },
   {
     title: "Discrete Mathematics and Its Applications",
@@ -73,7 +73,7 @@ const SEED_BOOKS = [
     sellerId: "seed-user-5",
     sellerName: "Arjun Varma",
     sellerEmail: "arjun.v@college.edu",
-    createdAt: new Date(Date.now() - 3600000 * 24 * 5).toISOString() // 5 days ago
+    createdAt: new Date(Date.now() - 3600000 * 24 * 5).toISOString()
   },
   {
     title: "Design Patterns: Object-Oriented Software",
@@ -87,7 +87,63 @@ const SEED_BOOKS = [
     sellerId: "seed-user-6",
     sellerName: "Deva Gupta",
     sellerEmail: "deva.g@college.edu",
-    createdAt: new Date(Date.now() - 3600000 * 2).toISOString() // 2 hours ago
+    createdAt: new Date(Date.now() - 3600000 * 2).toISOString()
+  },
+  {
+    title: "Operating System Concepts (10th Edition)",
+    author: "Abraham Silberschatz, Greg Gagne",
+    semester: "Semester 4",
+    price: 510,
+    condition: "Good",
+    contactPhone: "9812345670",
+    description: "The Dinosaur book — core OS textbook covering process management, memory, file systems, and scheduling. Minor pencil marks on a few pages only.",
+    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=600",
+    sellerId: "seed-user-7",
+    sellerName: "Neha Reddy",
+    sellerEmail: "neha.reddy@college.edu",
+    createdAt: new Date(Date.now() - 3600000 * 24 * 2).toISOString()
+  },
+  {
+    title: "Engineering Mathematics (Vol. 1 & 2)",
+    author: "B.S. Grewal",
+    semester: "Semester 1",
+    price: 280,
+    condition: "Fair",
+    contactPhone: "9966554433",
+    description: "Classic B.S. Grewal for M1 and M2. Both volumes bundled together. Cover is worn but all content is fully intact. Perfect for semester exam prep.",
+    image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=600",
+    sellerId: "seed-user-8",
+    sellerName: "Kiran Babu",
+    sellerEmail: "kiran.b@college.edu",
+    createdAt: new Date(Date.now() - 3600000 * 24 * 7).toISOString()
+  },
+  {
+    title: "Software Engineering: A Practitioner's Approach",
+    author: "Roger S. Pressman",
+    semester: "Semester 5",
+    price: 390,
+    condition: "Very Good",
+    contactPhone: "9700112233",
+    description: "Covers the full SDLC, agile methods, testing strategies, and project management. Barely used — bought it but switched to e-notes. Great condition.",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=600",
+    sellerId: "seed-user-9",
+    sellerName: "Tanvi Nair",
+    sellerEmail: "tanvi.n@college.edu",
+    createdAt: new Date(Date.now() - 3600000 * 6).toISOString()
+  },
+  {
+    title: "Digital Logic and Computer Design",
+    author: "M. Morris Mano",
+    semester: "Semester 2",
+    price: 310,
+    condition: "Good",
+    contactPhone: "9550667788",
+    description: "Essential book for Digital Electronics and COA. Clear explanations of gates, flip-flops, and Boolean algebra. A few pages have light highlights.",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600",
+    sellerId: "seed-user-10",
+    sellerName: "Aditya Kumar",
+    sellerEmail: "aditya.k@college.edu",
+    createdAt: new Date(Date.now() - 3600000 * 24 * 4).toISOString()
   }
 ];
 
@@ -257,7 +313,7 @@ export default function Books() {
           </div>
         ) : (
           <>
-            {/* Seeding Box for Empty DB */}
+            {/* Seeding Box — always visible so catalog can be populated at any time */}
             {books.length === 0 && (
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
