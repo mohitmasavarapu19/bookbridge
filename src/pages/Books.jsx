@@ -11,8 +11,7 @@ const SEED_BOOKS = [
     semester: "Semester 3",
     price: 650,
     condition: "Very Good",
-    contactPhone: "9347591593",
-    description: "Standard syllabus textbook for Data Structures & Algorithms. Pages are clean, no ink marks. Original print edition bought last year.",
+    contactPhone: "9100000001",
     image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=600",
     sellerId: "seed-user-1",
     sellerName: "Siva Mohit",
@@ -25,7 +24,7 @@ const SEED_BOOKS = [
     semester: "Semester 5",
     price: 420,
     condition: "Good",
-    contactPhone: "9876543210",
+    contactPhone: "9100000002",
     description: "Essential textbook for CN course. Covers transport layer, routing algorithms, and networking protocols. Slightly worn cover edges but inside is crisp.",
     image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=600",
     sellerId: "seed-user-2",
@@ -39,7 +38,7 @@ const SEED_BOOKS = [
     semester: "Semester 4",
     price: 480,
     condition: "Like New",
-    contactPhone: "9944883311",
+    contactPhone: "9100000003",
     description: "Used for the DBMS theory and lab courses. Extremely clean, not a single highlight or tear. Selling as I am moving to the next semester.",
     image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=600",
     sellerId: "seed-user-3",
@@ -53,8 +52,7 @@ const SEED_BOOKS = [
     semester: "Semester 6",
     price: 720,
     condition: "Like New",
-    contactPhone: "9347591593",
-    description: "Comprehensive AI book. Essential reference guide for ML, NLP, and intelligent search algorithms. Beautiful paper quality.",
+    contactPhone: "9100000004",
     image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=600",
     sellerId: "seed-user-4",
     sellerName: "Siva Mohit",
@@ -67,7 +65,7 @@ const SEED_BOOKS = [
     semester: "Semester 2",
     price: 350,
     condition: "Fair",
-    contactPhone: "9123456780",
+    contactPhone: "9100000005",
     description: "Purchased in first year. Worn out front cover but pages are 100% readable. Highly recommended for logic, proofs, and graph theory.",
     image: "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&q=80&w=600",
     sellerId: "seed-user-5",
@@ -81,7 +79,7 @@ const SEED_BOOKS = [
     semester: "Elective",
     price: 550,
     condition: "Very Good",
-    contactPhone: "9000123456",
+    contactPhone: "9100000006",
     description: "The classical Gang of Four (GoF) book on design pattern architectures. Very useful for software engineering and job interviews.",
     image: "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&q=80&w=600",
     sellerId: "seed-user-6",
@@ -95,7 +93,7 @@ const SEED_BOOKS = [
     semester: "Semester 4",
     price: 510,
     condition: "Good",
-    contactPhone: "9812345670",
+    contactPhone: "9100000007",
     description: "The Dinosaur book — core OS textbook covering process management, memory, file systems, and scheduling. Minor pencil marks on a few pages only.",
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=600",
     sellerId: "seed-user-7",
@@ -109,7 +107,7 @@ const SEED_BOOKS = [
     semester: "Semester 1",
     price: 280,
     condition: "Fair",
-    contactPhone: "9966554433",
+    contactPhone: "9100000008",
     description: "Classic B.S. Grewal for M1 and M2. Both volumes bundled together. Cover is worn but all content is fully intact. Perfect for semester exam prep.",
     image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=600",
     sellerId: "seed-user-8",
@@ -123,7 +121,7 @@ const SEED_BOOKS = [
     semester: "Semester 5",
     price: 390,
     condition: "Very Good",
-    contactPhone: "9700112233",
+    contactPhone: "9100000009",
     description: "Covers the full SDLC, agile methods, testing strategies, and project management. Barely used — bought it but switched to e-notes. Great condition.",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=600",
     sellerId: "seed-user-9",
@@ -137,7 +135,7 @@ const SEED_BOOKS = [
     semester: "Semester 2",
     price: 310,
     condition: "Good",
-    contactPhone: "9550667788",
+    contactPhone: "9100000010",
     description: "Essential book for Digital Electronics and COA. Clear explanations of gates, flip-flops, and Boolean algebra. A few pages have light highlights.",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600",
     sellerId: "seed-user-10",
@@ -461,7 +459,7 @@ export default function Books() {
               {/* Close Button */}
               <button
                 onClick={() => setSelectedBook(null)}
-                className="absolute top-4 right-4 z-25 bg-slate-950/80 hover:bg-slate-800 p-2.5 rounded-full border border-slate-850 hover:text-cyan-400 transition cursor-pointer"
+                className="absolute top-4 right-4 z-30 bg-slate-950/80 hover:bg-slate-800 p-2.5 rounded-full border border-slate-850 hover:text-cyan-400 transition cursor-pointer"
               >
                 <FaTimes />
               </button>
@@ -539,9 +537,9 @@ export default function Books() {
                 <div className="mt-8 pt-4 border-t border-slate-850 flex flex-col sm:flex-row gap-3">
                   <a
                     href={`tel:${selectedBook.contactPhone}`}
-                    className="flex-1 bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 py-3 rounded-xl font-bold text-xs md:text-sm hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all flex items-center justify-center gap-2 cursor-pointer text-center"
-                  >
-                    <FaPhoneAlt />
+                    className="flex-1 bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 py-3 rounded-xl font-bold text-xs md:text-sm hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap"
+                    >
+                    <FaPhoneAlt className="shrink-0" />
                     <span>Call Seller (+91 {selectedBook.contactPhone})</span>
                   </a>
                   

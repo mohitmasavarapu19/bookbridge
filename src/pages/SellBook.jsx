@@ -46,6 +46,11 @@ export default function SellBook() {
       return setError("Please enter a valid price greater than 0");
     }
 
+    const phoneDigits = phone.trim().replace(/\D/g, "");
+    if (phoneDigits.length !== 10) {
+      return setError("Please enter a valid 10-digit phone number");
+    }
+
     const imageUrl = coverType === "preset" ? selectedPreset : (customCoverUrl.trim() || PRESET_COVERS[4].url);
 
     try {
@@ -57,7 +62,7 @@ export default function SellBook() {
         semester,
         price: priceNum,
         condition,
-        contactPhone: phone.trim(),
+        contactPhone: phoneDigits,
         description: description.trim(),
         image: imageUrl,
         sellerId: currentUser.uid,
@@ -314,7 +319,7 @@ export default function SellBook() {
 
           {/* Bottom description box */}
           <div>
-            <label className="text-xs text-gray-400 font-semibold mb-2 block uppercase tracking-wider font-semibold">Book Description</label>
+            <label className="text-xs text-gray-400 font-semibold mb-2 block uppercase tracking-wider">Book Description</label>
             <div className="relative">
               <FaParagraph className="absolute left-4 top-4 text-gray-500 text-sm" />
               <textarea

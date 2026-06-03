@@ -43,6 +43,7 @@ function AnimatedRoutes() {
             }
           />
           <Route path="/developer" element={<Developer />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </motion.div>
     </AnimatePresence>
@@ -51,7 +52,7 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <AuthProvider>
         <div className="min-h-screen bg-slate-950 text-white flex flex-col">
           <Navbar />

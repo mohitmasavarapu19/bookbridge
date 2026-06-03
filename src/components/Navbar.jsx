@@ -50,6 +50,7 @@ export default function Navbar() {
 
         <Link
           to="/sell"
+          title={currentUser ? undefined : "Login required to sell a book"}
           className={`flex items-center gap-1.5 px-2 md:px-3 py-1.5 md:py-2 rounded-xl text-xs md:text-sm font-medium transition-all duration-200 ${
             isActive("/sell")
               ? "text-cyan-400 bg-cyan-500/10"
