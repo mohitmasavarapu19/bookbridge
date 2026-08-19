@@ -1,8 +1,9 @@
 {
   "name": "bookbridge",
+  "version": "1.0.0",
+  "description": "Premium peer-to-peer campus marketplace for students to buy and sell textbooks.",
   "homepage": "https://mohitmasavarapu19.github.io/bookbridge",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
