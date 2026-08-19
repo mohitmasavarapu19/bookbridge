@@ -83,6 +83,19 @@ npm run dev
 ```
 Open your browser and navigate to `http://localhost:5173`.
 
+### 5. Configure Firestore Security Rules
+To allow data fetching and seeding to work, ensure your Cloud Firestore Rules in the Firebase Console are configured to allow access:
+```javascript
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
+```
+
 ---
 
 ## 📦 Deployment to GitHub Pages
